@@ -1,0 +1,41 @@
+.tenor-sans-regular {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --primary: #3ca6be;
+  --secondary: #d1cbf6;
+  --action: #8d92dd;
+  --accent: #fcb688;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Tenor Sans, sans-serif;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+
+body {
+  margin: 0;
+  color: #3ca6be;
+}
+
+h1{
+  font-family: var(--heading);
+  color: var(--primary);
+}
+
+button{
+  font-family: --sans;
+}

@@ -1,0 +1,88 @@
+.tenor-sans-regular {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#nav, footer{
+  background-color: #d1cbf6;
+  padding: 0 16px;
+
+}
+
+#CTA{
+  height: 50vh;
+}
+#name{
+  font-family: "Tenor Sans", sans-serif;
+  color: #3ca6be;
+  font-weight:700;
+}
+.CTA-container{
+  width:90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  nowrap;
+  gap:20px;
+  justify-self: center;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+   color: #6a3586;
+}
+.CTA-container h1{
+  font-family: Tenor Sans;
+}
+
+.CTA-container img{
+  max-width: 400px;
+  min-width: 350px;
+}
+
+#placeholder_img{
+  max-width: 400px;
+  height:90%;
+  min-width: 350px;
+  border: solid lightgrey;
+}
+
+.CTA-CTA{
+  width:50%;
+  align-content: left;
+  text-align: right;
+}
+
+.problem{
+  width:40%;
+  justify-self: center;
+  text-align: center;
+  font-family: "Tenor Sans";
+  margin:5em;
+  display:grid;
+   grid-template-columns: repeat(2, 1fr); /* fix grid*/
+  grid-template-rows: repeat(2, 1fr);    
+  gap: 10px;  
+}
+
+.review-section{
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  justify-self: center;
+  margin-top:5em;
+}
+
+#contact{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border:solid red;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin-top:5em;
+}
+.contact-me{
+  max-width: 600px;
+  min-width: 390px;
+}
