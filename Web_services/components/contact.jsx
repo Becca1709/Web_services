@@ -3,6 +3,10 @@ import Form from 'react-bootstrap/Form';
 function ContactMe() {
   return (
     <Form>
+      <Form.Group className='mb-3'>
+        <Form.Label>Nombre</Form.Label>
+        <Form.Control aria-label="Nombre"/>
+      </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="name@example.com" />

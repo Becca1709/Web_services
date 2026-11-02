@@ -18,6 +18,13 @@
   color: #3ca6be;
   font-weight:700;
 }
+.text
+{
+  font-family: "Tenor Sans", sans-serif;
+  color: #3ca6be;
+  font-weight:400;
+}
+
 .CTA-container{
   width:90%;
   display: flex;
@@ -29,9 +36,6 @@
   align-items: center;
   justify-content: center;
    color: #6a3586;
-}
-.CTA-container h1{
-  font-family: Tenor Sans;
 }
 
 .CTA-container img{
@@ -53,17 +57,38 @@
 }
 
 .problem{
-  width:40%;
+  width:60%;
   justify-self: center;
   text-align: center;
   font-family: "Tenor Sans";
   margin:5em;
   display:grid;
-   grid-template-columns: repeat(2, 1fr); /* fix grid*/
-  grid-template-rows: repeat(2, 1fr);    
-  gap: 10px;  
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "pro-text pro-image"
+    "pro-options pro-options"
+    "pro-btn pro-btn";
+  gap: 16px;
+  padding: 2em;
 }
 
+.pro-text{
+  grid-area: pro-text;
+}
+
+.pro-image{
+  grid-area: pro-image;
+}
+.pro-options{
+  grid-area: pro-options;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.pro-btn{
+  grid-area: pro-btn;
+}
 .review-section{
   display:flex;
   flex-direction: row;
@@ -72,17 +97,30 @@
   margin-top:5em;
 }
 
+.Frequent_Q{
+text-align: center;
+justify-self: center;
+margin: 5em;
+width:60%;
+}
+.accordion{
+  margin: 2em 0em;
+
+}
 #contact{
-  display: flex;
-  flex-direction: row;
   width: 100%;
-  border:solid red;
   justify-items: center;
   align-items: center;
   justify-content: center;
   margin-top:5em;
 }
+.contact-text{
+  text-align: right;
+  width:360px;
+  
+}
 .contact-me{
+
   max-width: 600px;
   min-width: 390px;
 }
