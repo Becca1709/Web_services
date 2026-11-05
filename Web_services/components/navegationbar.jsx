@@ -12,13 +12,16 @@ function TopBar(props) {
         </Container>
          <Nav  variant="underline" defaultActiveKey="/home" >
       <Nav.Item>
-        <Nav.Link href="/home">{props.link1}</Nav.Link>
+        <Nav.Link href="/">{props.link1}</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="/">{props.link2}</Nav.Link>
       </Nav.Item>
       <Nav.Item>
          <Nav.Link eventKey="/">{props.link3}</Nav.Link>
+      </Nav.Item>
+       <Nav.Item>
+         <Nav.Link eventKey="/Example">{props.link4}</Nav.Link>
       </Nav.Item>
     </Nav>
          </Navbar>

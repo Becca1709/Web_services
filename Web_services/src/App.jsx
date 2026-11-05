@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Opt_Cards from '../components/options_card'
 import FAQ_acc from "../components/FAQ_accordeon"
+import Footer from "../components/footer"
 import web_services from './assets/webcta2.png'
 
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
  
-    <TopBar business_name="Nombre del negocio" link1="Home" link2="Reviews" link3="Contact"/>
+    <TopBar business_name="Nombre del negocio" link1="Home" link2="Reviews" link3="Contact" link4="[Example]"/>
 <section id="CTA">
   <div className='CTA-container'>
 <img src="#" alt="services_img" width="300px" id="placeholder_img"/>
@@ -30,6 +31,7 @@ function App() {
 <section id="problem">
   <div className='problem'>
     <div className='pro-text'>
+      <p>Evidencia social #2</p>
    <h2 className='text'>Cual es el problema mas recurrente de tus clientes </h2>
     <p>Solucion ofrecida.</p>
     </div>
@@ -61,6 +63,7 @@ function App() {
   </div>
 </section>
 <section id="contact">
+  <div className='contact-cont'>
     <h3 className='text'>Contactanos</h3>
 <div className='contact-me'>
 <ContactMe/>
@@ -70,10 +73,9 @@ function App() {
 <p>Tienes mas preguntas, necesitas un presupuesto, quieres conocernos? </p>
 <p>Por favor rellena el formulario y nos contactaremos contigo.</p>
 </div>
+</div>
 </section>
-<footer>
-  <p>This is the footer section</p>
-</footer>
+<Footer/>
     </>
   )
 }

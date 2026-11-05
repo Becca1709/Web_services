@@ -4,10 +4,8 @@
   font-style: normal;
 }
 
-#nav, footer{
-  background-color: #d1cbf6;
+#nav{
   padding: 0 16px;
-
 }
 
 #CTA{
@@ -114,13 +112,38 @@ width:60%;
   justify-content: center;
   margin-top:5em;
 }
+.contact-cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text text"
+  "contact-me contact-text";
+}
+.contact-cont .text{
+  grid-area: text;
+  text-align: center;
+}
 .contact-text{
-  text-align: right;
+  text-align: left;
+  text-wrap: balance;
+  padding:32px;
   width:360px;
+  grid-area: contact-text;
   
 }
 .contact-me{
-
+  grid-area: contact-me;
   max-width: 600px;
   min-width: 390px;
+}
+.footer{
+background-color: rgba(239, 238, 238, 0.516);
+padding: 32px;
+align-self:center;
+justify-self: center;
+width:100%;
+
+}
+.footer ul{
+  list-style: none;
+  text-align: center;
 }

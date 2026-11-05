@@ -13,49 +13,66 @@ function Example() {
   return (
     <>
  
-    <TopBar/>
+    <TopBar business_name="Rebecca Designs" link1="Home" link2="Reviews" link3="Contact" link4="[Example]"/>
 <section id="CTA">
   <div className='CTA-container'>
-<img src={web_services} alt="webservices" />
-<div className='CTA-CTA'>
-<h1>Tu te preocupas de tus numeros. Yo de tu página web.</h1>
-    <Button type="button" variant="success"> Consulta precios aqui!
+<img src="#" alt="services_img" width="300px" id="placeholder_img"/>
+<div className='CTA-CTA' >
+  <p>Evidencia social #1</p>
+<h1 className='text'>Que resultado esperan ver tus clientes</h1>
+    <Button type="button" variant="success"> Botón de Acción
       </Button>   
 </div>
 </div>
 </section>
 <section id="problem">
   <div className='problem'>
-  <h2>Trabajar solo puede ser cansador. </h2>
-    <p>Tratando de ser el fundador, contador, diseñador, HR y desarrollador web todo al mismo tiempo?</p>
-  <p>Aqui estoy para ayudarte! No estas solo</p>
+    <div className='pro-text'>
+      <p>Evidencia social #2</p>
+   <h2 className='text'>Cual es el problema mas recurrente de tus clientes </h2>
+    <p>Solucion ofrecida.</p>
+    </div>
+    <img src="#" alt="Problem_img" width="300px" id="placeholder_img" className="pro-image"/>
+    <div className='pro-options'>
+      <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
+      <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
+    </div>
+    <div className="pro-btn">
+     <Button  type="button" variant="success"> Botón de Acción
+      </Button>   
+</div>
   </div>
 </section>
 <section id="reviews">
   <div className='review-section'>
-  <Review_Card title="Best services ever" text="It was so easy to work with Becca and my business is doing so much better!"/>
-    <Review_Card title="Best services ever" text="It was so easy to work with Becca and my business is doing so much better!"/>
-      <Review_Card title="Best services ever" text="It was so easy to work with Becca and my business is doing so much better!"/>
+    
+  <Review_Card title="Title" text="What went well." rating= {4}/>
+  <Review_Card title="Title" text="What went well." rating= {5}/>
+  <Review_Card title="Title" text="What went well." rating= {3}/>
   </div>
 </section>
 <section id= "FAQ">
-  <div>
-    <h3>Preguntas frequentes</h3>
-    <p>Add acorden</p>
-
+  <div className='Frequent_Q'>
+    <h3 className='text'>Preguntas frequentes</h3>
+    <FAQ_acc/>
+     <Button type="button" variant="success"> Botón de Acción
+      </Button> 
   </div>
 </section>
 <section id="contact">
+  <div className='contact-cont'>
+    <h3 className='text'>Contactanos</h3>
 <div className='contact-me'>
 <ContactMe/>
 </div>
-<div className=''><h4>Quieres ponerte en contacto?</h4>
-<p>escribeme aqui</p>
+<div className='contact-text'>
+  <h4>Queremos escucharte</h4>
+<p>Tienes mas preguntas, necesitas un presupuesto, quieres conocernos? </p>
+<p>Por favor rellena el formulario y nos contactaremos contigo.</p>
+</div>
 </div>
 </section>
-<footer>
-  <p>This is the footer section</p>
-</footer>
+<Footer/>
     </>
   )
 }
