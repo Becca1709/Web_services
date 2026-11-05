@@ -33,7 +33,7 @@
   height:100%;
   align-items: center;
   justify-content: center;
-   color: #6a3586;
+
 }
 
 .CTA-container img{
@@ -134,6 +134,7 @@ width:60%;
   grid-area: contact-me;
   max-width: 600px;
   min-width: 390px;
+  margin-bottom: 3em;
 }
 .footer{
 background-color: rgba(239, 238, 238, 0.516);

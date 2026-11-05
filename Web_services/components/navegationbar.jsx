@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container'
 
 function TopBar(props) {
+
   return (
     <>
        <Navbar className="bg-body-tertiary" id="nav">
@@ -15,13 +16,13 @@ function TopBar(props) {
         <Nav.Link href="/">{props.link1}</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="/">{props.link2}</Nav.Link>
+        <Nav.Link href="#reviews" >{props.link2}</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-         <Nav.Link eventKey="/">{props.link3}</Nav.Link>
+         <Nav.Link href="#contact">{props.link3}</Nav.Link>
       </Nav.Item>
        <Nav.Item>
-         <Nav.Link eventKey="/Example">{props.link4}</Nav.Link>
+         <Nav.Link href="/Example">{props.link4}</Nav.Link>
       </Nav.Item>
     </Nav>
          </Navbar>

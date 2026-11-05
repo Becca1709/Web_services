@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRef } from 'react'
 import TopBar from '../components/navegationbar'
 import Review_Card from '../components/reviews'
 import ContactMe from '../components/contact'
@@ -48,7 +49,6 @@ function App() {
 </section>
 <section id="reviews">
   <div className='review-section'>
-    
   <Review_Card title="Title" text="What went well." rating= {4}/>
   <Review_Card title="Title" text="What went well." rating= {5}/>
   <Review_Card title="Title" text="What went well." rating= {3}/>
