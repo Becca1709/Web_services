@@ -14,10 +14,12 @@ import web_services from './assets/webcta2.png'
 
 function App() {
 
+const questionsList =[{eventkey:"0", header:"Question 1", body:"blah blah"}, {eventkey:"1", header:"Question 2", body:"bleh bleh"}, {eventkey:"2", header:"Question 3", body:"bleh bleh bleh"}];
+
   return (
     <>
  
-    <TopBar business_name="Nombre del negocio" link1="Home" link2="Reviews" link3="Contact" link4="[Example]"/>
+    <TopBar business_name="Nombre del negocio" link1="Home" link2="Reviews" link3="Contact" link4="[Example]" link5="Services"/>
 <section id="CTA">
   <div className='CTA-container'>
 <img src="#" alt="services_img" width="300px" id="placeholder_img"/>
@@ -34,18 +36,25 @@ function App() {
     <div className='pro-text'>
       <p>Evidencia social #2</p>
    <h2 className='text'>Cual es el problema mas recurrente de tus clientes </h2>
-    <p>Solucion ofrecida.</p>
+   </div>
+   <img src="#" alt="Problem_img" width="300px" id="placeholder_img" className="pro-image"/>
     </div>
-    <img src="#" alt="Problem_img" width="300px" id="placeholder_img" className="pro-image"/>
-    <div className='pro-options'>
+   </section>
+   <section id="services">
+    <div className='options'>
+
+      <h3 className="pro-title">Solucion ofrecida.</h3>
+    <div className='pro-options-righ'>
       <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
+      </div>
+    <div className='pro-options-left'>
       <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
     </div>
     <div className="pro-btn">
      <Button  type="button" variant="success"> Botón de Acción
-      </Button>   
+      </Button>  
+      </div> 
 </div>
-  </div>
 </section>
 <section id="reviews">
   <div className='review-section'>
@@ -57,7 +66,7 @@ function App() {
 <section id= "FAQ">
   <div className='Frequent_Q'>
     <h3 className='text'>Preguntas frequentes</h3>
-    <FAQ_acc/>
+    <FAQ_acc  questions={questionsList}/>
      <Button type="button" variant="success"> Botón de Acción
       </Button> 
   </div>
