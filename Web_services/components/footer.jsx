@@ -12,7 +12,7 @@ export default function Footer(){
     </Row>
     <Row>
         <Col>Su nombre</Col>
-        <Col><ul><li>Home</li><li>Reviews</li><li>Services</li><li>Contact</li></ul></Col>
+        <Col><ul><li><a href="/">Home</a></li><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></Col>
         <Col><ul><li>LinkedIn</li><li>Instragram</li></ul></Col>
     </Row>
 </Container>

@@ -23,7 +23,7 @@ const questionsList =[{eventkey:"0", header:"1. ¿Tengo que saber de tecnología
   return (
     <>
  
-    <TopBar business_name="Rebecca Designs" link1="Home" link2="Reviews" link3="Contact"/>
+    <TopBar business_name="Rebecca Designs" link1="Home" link2="Reviews" link3="Contact" link5="Services"/>
 <section id="CTA">
   <div className='CTA-container'>
 <img src={webcta} alt="services_img"/>
@@ -48,10 +48,13 @@ const questionsList =[{eventkey:"0", header:"1. ¿Tengo que saber de tecnología
     <div className='options'>
       <h3 className="pro-title"> Recupera tu tiempo y tu enfoque: elige la opción ideal para delegar tu web hoy mismo </h3>
     <div className='pro-options-righ'>
-      <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
+      <Opt_Cards title=" Plan Llave en Mano (Diseño & Estrategia integral)" sub="Para el contratista que quiere delegar el 100% del
+trabajo y recibir una web que facture desde el primer día." price="$1,200 USD (O 3 cuotas de $450 USD)"  text="¿Qué incluye?:
+Estructura y diseño web 100% personalizado. Redacción persuasiva (Copywriting) de todas las secciones. Optimización SEO local para aparecer en Google. Integración de agenda automática y pasarela de pagos."/>
       </div>
     <div className='pro-options-left'>
-      <Opt_Cards title="nombre de la opción" sub="Cliente ideal"  text="Describe porque es la mejor opción para cierto cliente y que ofrece"/>
+      <Opt_Cards title="Plan Impulso (Consultoría y Plantilla)" sub="Para el profesional que quiere hacerlo bien, pero
+tiene un presupuesto ajustado y busca guía experta." price="$450 USD (Pago único)" text="¿Qué incluye?:1 Sesión de estrategia de 90 minutos. Plantilla web optimizada para conversión (lista para rellenar). Revisión final de textos y diseño antes de lanzar. Soporte técnico por correo durante 30 días."/>
     </div>
     <div className="pro-btn">
      <Button  type="button" variant="success"> Agenda tu sesión estratégica gratuita
@@ -61,10 +64,9 @@ const questionsList =[{eventkey:"0", header:"1. ¿Tengo que saber de tecnología
 </section>
 <section id="reviews">
   <div className='review-section'>
-    
-  <Review_Card title="Title" text="What went well." rating= {4}/>
-  <Review_Card title="Title" text="What went well." rating= {5}/>
-  <Review_Card title="Title" text="What went well." rating= {3}/>
+  <Review_Card title="Rápido y claro" text="El equipo entendio rapidamente el problema, en una semana mi pagina web estaba funcionando." rating= {4}/>
+  <Review_Card title="Buen Servicio" text="Se nota que hay preocupacion por dar un buen servicio. Los recomendare." rating= {5}/>
+  <Review_Card title="Ok" text="Bueno, bonito y barato, aun que quizas no tan rápido como me gustaría." rating= {3}/>
   </div>
 </section>
 <section id= "FAQ">

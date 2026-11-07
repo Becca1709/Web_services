@@ -18,11 +18,10 @@ const questionsList =[{eventkey:"0", header:"Question 1", body:"blah blah"}, {ev
 
   return (
     <>
- 
     <TopBar business_name="Nombre del negocio" link1="Home" link2="Reviews" link3="Contact" link4="[Example]" link5="Services"/>
 <section id="CTA">
   <div className='CTA-container'>
-<img src="#" alt="services_img" width="300px" id="placeholder_img"/>
+<img src="#" alt="services_img" id="phimg"/>
 <div className='CTA-CTA' >
   <p>Evidencia social #1</p>
 <h1 className='text'>Que resultado esperan ver tus clientes</h1>
@@ -33,11 +32,11 @@ const questionsList =[{eventkey:"0", header:"Question 1", body:"blah blah"}, {ev
 </section>
 <section id="problem">
   <div className='problem'>
-    <div className='pro-text'>
+    <div className='pro-text' id="problemtxt">
       <p>Evidencia social #2</p>
    <h2 className='text'>Cual es el problema mas recurrente de tus clientes </h2>
    </div>
-   <img src="#" alt="Problem_img" width="300px" id="placeholder_img" className="pro-image"/>
+   <img src="#" alt="Problem_img" id="phimg"/>
     </div>
    </section>
    <section id="services">
