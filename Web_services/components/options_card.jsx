@@ -10,8 +10,7 @@ function Opt_Cards(props) {
         <Card.Text>
       {props.text}
         </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
+        <Card.Link href="#">Más información</Card.Link>
       </Card.Body>
     </Card>
   );

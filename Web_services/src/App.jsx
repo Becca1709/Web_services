@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useRef } from 'react'
 import TopBar from '../components/navegationbar'
 import Review_Card from '../components/reviews'
-import ContactMe from '../components/contact'
+import {ContactMe} from '../components/contact'
 import './App.css'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
