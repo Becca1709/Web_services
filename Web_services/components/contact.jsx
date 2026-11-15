@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 
 
 export function ContactMe() {
-  const [isSuccess, setIsSuccess] = useState(false);
+  /*const [isSuccess, setIsSuccess] = useState(false);*/
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  /*const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents page reload
     setIsSubmitting(true);
   }
@@ -20,13 +22,32 @@ export function ContactMe() {
       </div>
     );
   }
+*/
 
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    
+      .then(() => {setIsSubmitting(true);
+        navigate("/Success")})
+      .catch(error => alert(error));
+  };
   return (
     <Form
     name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}
     data-netlify-honeypot="bot-field"
     >
       <input class="d-none" name="bot-field"></input>
+      <input type="hidden" name="form-name" value="contact" />
       <Form.Group className='mb-3'>
         <Form.Label>Nombre</Form.Label>
         <Form.Control aria-label="Nombre" name="name" required/>

@@ -17,7 +17,7 @@ const starsArray = Array.from({ length: props.rating || 5 });
         <Card.Body>
           <div className='rating-score'>
           {starsArray.map((_, index) => (
-          <FontAwesomeIcon icon={faStar} style={{color: "rgb(255, 212, 59)",}} />
+          <FontAwesomeIcon key={index} icon={faStar} style={{color: "rgb(255, 212, 59)",}} />
             ))}
             </div>
           <Card.Title>{props.title}</Card.Title>
