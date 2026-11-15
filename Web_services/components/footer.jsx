@@ -1,6 +1,7 @@
 import {Container, Col, Row} from 'react-bootstrap'
+import { propTypes } from 'react-bootstrap/esm/Image'
 
-export default function Footer(){
+export default function Footer(props){
 
     return(
         <div className='footer'>
@@ -11,7 +12,7 @@ export default function Footer(){
         <Col><ul><strong>Contact </strong></ul></Col>
     </Row>
     <Row>
-        <Col>Su nombre</Col>
+        <Col>{props.name}</Col>
         <Col><ul><li><a href="/">Home</a></li><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul></Col>
         <Col><ul><li>LinkedIn</li><li>Instragram</li></ul></Col>
     </Row>

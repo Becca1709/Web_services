@@ -92,7 +92,7 @@ function Example() {
 </div>
 </div>
 </section>
-<Footer/>
+<Footer name="Rebecca Designs"/>
     </>
   )
 }

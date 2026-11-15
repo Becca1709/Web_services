@@ -83,7 +83,7 @@ const questionsList =[{eventkey:"0", header:"Question 1", body:"blah blah"}, {ev
 </div>
 </div>
 </section>
-<Footer/>
+<Footer name="su nombre"/>
     </>
   )
 }
